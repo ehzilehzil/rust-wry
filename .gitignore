@@ -1,0 +1,35 @@
+# Rust 개발용 .gitignore
+
+# 바이너리 파일 및 빌드 아티팩트
+/target/
+**/*.rs.bk
+
+# Cargo 관련 파일
+Cargo.lock
+.cargo/
+
+# IDE/에디터 관련 파일
+/.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+
+# OS별 임시 파일
+.DS_Store
+Thumbs.db
+
+# 로그 파일
+*.log
+
+# 테스트 결과
+/coverage/
+*.profraw
+
+# 기타
+node_modules/
+npm
+
+# Added by cargo
+
+/target
