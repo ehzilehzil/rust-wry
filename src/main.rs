@@ -26,7 +26,7 @@ fn main() {
             position: Position::Physical(PhysicalPosition { x: 0, y: 0 }),
             size: Size::Physical(PhysicalSize { width: window_inner_size.width, height: 120 }),
         })
-        .with_html(r#"<h1>Hello</h1>"#)
+        .with_html(include_str!("sub_webview.html"))
         .build_as_child(&window)
         .unwrap();
 
